@@ -110,5 +110,11 @@ def prompt_generation():
 def gallery():
     return "Gallery Page (Under Development)"
 
+@app.route('/my-images')
+def my_images():
+    if 'user' not in session:
+        return redirect(url_for('login'))
+    return "My Images Page (Under Development)"
+
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,0 +1,16 @@
+<nav class="navbar">
+    <div class="logo"> 
+        <a href="{{ url_for('landing_page') }}">LOGO</a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="{{ url_for('prompt_generation') }}">Generate Prompt</a></li>
+        <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+        <li class="profile-menu">
+            <img src="{{ url_for('static', filename='user.png') }}" alt="Profile" class="profile-icon">
+            <ul class="dropdown">
+                <li><a href="{{ url_for('my_images') }}">My Images</a></li>
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>

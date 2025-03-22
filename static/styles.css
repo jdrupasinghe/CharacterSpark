@@ -306,3 +306,48 @@ footer {
     background: #17a2b8;
     color: white;
 }
+
+/* Profile Menu Dropdown */
+.profile-menu {
+    position: relative;
+}
+
+.profile-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-menu .dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: #1b2a49;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 999;
+    min-width: 150px;
+}
+
+.profile-menu .dropdown li {
+    padding: 10px 20px;
+}
+
+.profile-menu .dropdown li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.profile-menu .dropdown li a:hover {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.profile-menu:hover .dropdown {
+    display: block;
+}
