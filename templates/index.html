@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - AI Prompt Generator{% endblock %}
+
+{% block content %}
+<div class="hero-section">
+    <h1>Transform Book Descriptions into AI-Generated Art</h1>
+    <p>Enter character descriptions from early readers' books and generate optimized AI prompts for accurate images.</p>
+    <a href="{{ url_for('prompt_generation') }}" class="get-started-btn">Get Started</a>
+</div>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="feature-card">
+        <h3>📖 AI-Optimized Prompts</h3>
+        <p>Convert simple book descriptions into structured prompts that create stunning AI-generated images.</p>
+    </div>
+    <div class="feature-card">
+        <h3>🌎 Gallery & Community</h3>
+        <p>Browse AI-generated images from other users, like them, and get inspired.</p>
+    </div>
+    <div class="feature-card">
+        <h3>💾 Save & Download</h3>
+        <p>Save your favorite AI-generated prompts and images for future reference.</p>
+    </div>
+</section>
+
+
+{% endblock %}
